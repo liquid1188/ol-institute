@@ -1178,3 +1178,5 @@ html.js .letter-toggle.js-only { display: none; }
 
 .mlabel .m-ic{display:grid;width:68px;height:68px;margin:0 0 14px}
 .mlabel .m-ic svg{width:44px;height:44px}
+.shelf-panel{border-radius:16px;position:relative;box-shadow:0 18px 40px -18px rgba(15,29,64,.55),inset 0 0 0 1px rgba(216,178,94,.55),inset 0 0 0 7px var(--royal),inset 0 0 0 8px rgba(216,178,94,.3);background:radial-gradient(120% 90% at 50% 0%,rgba(255,255,255,.07),transparent 60%),var(--royal)}
+.shelf-panel .shelf-cap{text-align:center}
