@@ -999,3 +999,7 @@ html.desktop-view .page-head.conf-head picture { left: 44%; }
   .page-head.about-head .wrap > *, .page-head.media-head .wrap > *, .page-head.kallistos .wrap > * { max-width: calc(44vw - var(--gutter) - 32px); }
   .page-head.about-head img, .page-head.media-head img, .page-head.kallistos img { opacity: 1; }
 }
+
+/* Oct 22: conference photo sits level with the details */
+.photo-row > figure { align-self: center; }
+@media (max-width: 900px) { .photo-row > figure { align-self: start; } }
