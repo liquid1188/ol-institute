@@ -1150,3 +1150,9 @@ html.js .letter-toggle.js-only { display: none; }
 .photo-row .defs > div{grid-template-columns:minmax(0,130px) minmax(0,1fr);padding:12px 0}
 /* small season symbols */
 .seasons .s-ic{display:block;width:30px;height:30px;color:#b8913a;margin-bottom:2px}
+
+/* Kallistos page: jump links on one line */
+.kallistos .jump{max-width:none!important;flex-wrap:wrap}
+.kallistos .jump a{font-size:.9rem}
+@media (min-width:900px){.kallistos .jump{column-gap:16px}}
+.kallistos .jump span{flex-basis:100%;margin-bottom:-6px}
