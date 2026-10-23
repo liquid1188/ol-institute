@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="18" fill="#1b2d58"/>
-<circle cx="50" cy="50" r="36" fill="none" stroke="#d4a94a" stroke-width="2.6"/>
-<path d="M39 56a11 11 0 0 1 22 0z" fill="#d4a94a"/>
-<g stroke="#d4a94a" stroke-width="2.6" stroke-linecap="round"><line x1="62.99" y1="48.50" x2="69.05" y2="45.00"/><line x1="57.50" y1="43.01" x2="61.00" y2="36.95"/><line x1="50.00" y1="41.00" x2="50.00" y2="34.00"/><line x1="42.50" y1="43.01" x2="39.00" y2="36.95"/><line x1="37.01" y1="48.50" x2="30.95" y2="45.00"/></g>
-<path d="M26 60q12-4 24 1q12-5 24-1v10q-12-4-24 1q-12-5-24-1z" fill="#d4a94a"/>
-<line x1="50" y1="61" x2="50" y2="71" stroke="#1b2d58" stroke-width="1.8"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="18" fill="#1b2d58"/><defs><clipPath id="l"><circle cx="40" cy="50" r="23"/></clipPath></defs><circle cx="60" cy="50" r="23" fill="#2e4a8c" clip-path="url(#l)"/><circle cx="40" cy="50" r="23" fill="none" stroke="#d4a94a" stroke-width="3.4"/><circle cx="60" cy="50" r="23" fill="none" stroke="#d4a94a" stroke-width="3.4"/><polygon points="50.00,37.50 48.24,45.75 41.16,41.16 45.75,48.24 37.50,50.00 45.75,51.76 41.16,58.84 48.24,54.25 50.00,62.50 51.76,54.25 58.84,58.84 54.25,51.76 62.50,50.00 54.25,48.24 58.84,41.16 51.76,45.75" fill="#d4a94a"/></svg>
