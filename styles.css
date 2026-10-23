@@ -1225,3 +1225,11 @@ html.js .letter-toggle.js-only { display: none; }
 @media (prefers-reduced-motion: reduce) { .cf-card { transition: none; } }
 .cf-sec { overflow: hidden; }
 .cf-sec .sec-head { margin-left: auto; margin-right: auto; text-align: center; max-width: none; }
+
+.aud-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 760px) { html:not(.desktop-view) .aud-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.award { display: inline-flex; align-items: center; gap: 10px; margin: 14px 0 0; padding: 7px 14px; border: 1px solid rgba(216,178,94,.6); color: #e9d7a8; font-size: .85rem; letter-spacing: .04em; }
+.award-ic { color: #d8b25e; }
+/* display type: a touch more presence */
+h1, h2 { font-weight: 600; letter-spacing: -0.018em; }
+h1 { letter-spacing: -0.022em; }
