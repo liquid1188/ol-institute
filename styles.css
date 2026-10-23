@@ -1140,3 +1140,13 @@ html.js .letter-toggle.js-only { display: none; }
 .arc li .need-ic{display:grid;width:72px;height:72px;margin:0 0 14px}
 .arc li .need-ic svg{width:52px;height:52px}
 .yr{font-size:1.4rem!important}
+/* conference row: balanced columns, photo fills the height of the text */
+@media (min-width: 900px){
+.photo-row:has(.defs){grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch}
+.photo-row:has(.defs) > figure{align-self:stretch;display:flex;flex-direction:column}
+.photo-row:has(.defs) > figure picture{flex:1;display:block;min-height:0}
+.photo-row:has(.defs) > figure img{height:100%;object-fit:cover;object-position:60% 40%}
+}
+.photo-row .defs > div{grid-template-columns:minmax(0,130px) minmax(0,1fr);padding:12px 0}
+/* small season symbols */
+.seasons .s-ic{display:block;width:30px;height:30px;color:#b8913a;margin-bottom:2px}
