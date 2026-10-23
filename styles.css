@@ -1112,3 +1112,8 @@ html.js .letter-toggle.js-only { display: none; }
 
 /* wider panel caption on the Conferences hero */
 @media (min-width: 761px){ .conf-head .credit{ max-width: min(84ch, 44vw) !important; } }
+
+/* seal mark: a little larger so the lettering reads */
+.site-head .brand img{width:58px;height:58px}
+.site-foot .fname img{width:64px;height:64px}
+@media (max-width:760px){.site-head .brand img{width:48px;height:48px}}
