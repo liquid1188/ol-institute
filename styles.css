@@ -1175,3 +1175,6 @@ html.js .letter-toggle.js-only { display: none; }
 .mini-spine:hover{transform:translateY(-4px)}
 
 .cur-further{opacity:.85;font-size:.9rem!important}
+
+.mlabel .m-ic{display:grid;width:68px;height:68px;margin:0 0 14px}
+.mlabel .m-ic svg{width:44px;height:44px}
