@@ -1081,3 +1081,8 @@ html.js .letter-toggle.js-only { display: none; }
 @media (min-width: 761px) and (max-width: 1100px) { .photo-strip.side { grid-template-columns: 1fr 1fr; } }
 #mission .photo-strip.side { margin-top: 0; }
 @media (min-width: 761px) { #mission .photo-strip.side img { aspect-ratio: 5 / 4; } }
+.praise figcaption { display: flex; align-items: center; gap: 14px; }
+.praise-pic img { display: block; width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid var(--leaf); }
+.praise.feat .praise-pic img { width: 72px; height: 72px; }
+.praise-credit { margin: 14px 0 0; font-size: .74rem; color: var(--ink-2); }
+.praise-pic { flex: none; }
