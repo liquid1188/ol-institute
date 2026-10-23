@@ -1040,3 +1040,26 @@ html.desktop-view .page-head.conf-head picture { left: 44%; }
 @media (max-width: 760px) { html:not(.desktop-view) .founders li { display: grid; grid-template-columns: 96px 1fr; column-gap: 16px; align-items: start; } html:not(.desktop-view) .founders .f-photo { grid-row: span 2; margin: 0; } html:not(.desktop-view) .founders .f-photo img { max-width: 96px; } }
 /* Oct 22: on phones, hero photo captions sit below the heading, not between photo and title */
 @media (max-width: 760px) { html:not(.desktop-view) .page-head .credit { order: 2; padding: 0 var(--gutter-r) 18px var(--gutter); margin-top: -6px; background: none; } }
+
+/* Oct 22: programs table becomes cards on phones */
+@media (max-width: 700px) {
+  html:not(.desktop-view) .matrix-wrap { overflow: visible; border-top: 0; }
+  html:not(.desktop-view) .matrix, html:not(.desktop-view) .matrix tbody, html:not(.desktop-view) .matrix tr, html:not(.desktop-view) .matrix th, html:not(.desktop-view) .matrix td { display: block; width: auto; }
+  html:not(.desktop-view) .matrix thead { display: none; }
+  html:not(.desktop-view) .matrix tr { background: var(--paper); border: 1px solid var(--rule); border-top: 3px solid var(--leaf); padding: 16px 18px 6px; margin-bottom: 14px; }
+  html:not(.desktop-view) .matrix tr.hl { border-top-color: var(--gold); }
+  html:not(.desktop-view) .matrix tbody th { font-size: 1.3rem; padding: 0 0 6px; border: 0; }
+  html:not(.desktop-view) .matrix td { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  html:not(.desktop-view) .matrix td:last-child { border-bottom: 0; }
+  html:not(.desktop-view) .matrix td::before { content: attr(data-label); display: block; font-size: .78rem; letter-spacing: .02em; color: var(--ink-2); margin-bottom: 2px; }
+}
+/* Oct 22: Jack's letter folds on phones */
+.letter-toggle { display: none; }
+@media (max-width: 700px) {
+  html.js:not(.desktop-view) .letter-more:not(.open) { display: none; }
+  html.js:not(.desktop-view) .letter-toggle { display: inline-flex; align-items: center; min-height: 44px; margin: 4px 0 18px; padding: 0; background: none; border: 0; border-bottom: 1px solid var(--gold); color: var(--lapis); font: 600 1rem var(--body); cursor: pointer; }
+}
+@media (max-width: 700px) { html:not(.desktop-view) .matrix { min-width: 0; } html:not(.desktop-view) .matrix tbody th { width: auto; } }
+html.js .letter-toggle.js-only { display: none; }
+@media (max-width: 700px) { html.js:not(.desktop-view) .letter-toggle.js-only { display: inline-flex; } }
+@media (max-width: 700px) { html:not(.desktop-view) .matrix tr.hl { background: #f4ecda; } html:not(.desktop-view) .matrix tr.hl th, html:not(.desktop-view) .matrix tr.hl td { background: none; } }
