@@ -1117,3 +1117,9 @@ html.js .letter-toggle.js-only { display: none; }
 .site-head .brand img{width:58px;height:58px}
 .site-foot .fname img{width:64px;height:64px}
 @media (max-width:760px){.site-head .brand img{width:48px;height:48px}}
+
+/* icons above the Where gifts go cards */
+.needs li{text-align:center}
+.need-ic{display:inline-grid;place-items:center;width:84px;height:84px;border-radius:50%;background:var(--royal);color:#d8b25e;margin:0 auto 18px;box-shadow:inset 0 0 0 2px rgba(216,178,94,.85),inset 0 0 0 5px var(--royal),inset 0 0 0 6px rgba(216,178,94,.5)}
+.need-ic svg{width:62px;height:62px}
+.needs li{padding-top:26px}
