@@ -968,3 +968,12 @@ html.desktop-view .page-head.about-head img { transform: scale(1.1); }
 .vals-about b { color: var(--ink); font-weight: 600; }
 .plan-note { margin: -4px 0 12px; font-size: .92rem; font-style: italic; color: var(--ink-2); }
 .parent p + p { margin-top: 12px; }
+
+/* Oct 22: Conferences hero, text on the left, photo on the right */
+@media (min-width: 761px) {
+  .page-head.conf-head picture { left: 44%; }
+  .page-head.conf-head img { object-position: 50% 62%; }
+  .page-head.conf-head::after { background: linear-gradient(90deg, var(--royal) 44%, rgba(27,45,92,.55) 50%, rgba(27,45,92,0) 60%), linear-gradient(0deg, rgba(10,12,20,.45), transparent 30%); }
+  .page-head.conf-head .wrap > * { max-width: 34rem; }
+}
+html.desktop-view .page-head.conf-head picture { left: 44%; }
