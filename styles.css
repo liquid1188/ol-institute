@@ -1073,3 +1073,6 @@ html.js .letter-toggle.js-only { display: none; }
 .praise figcaption b { display: block; font-weight: 600; color: var(--ink); }
 .praise figcaption span { display: block; font-size: .88rem; color: var(--ink-2); }
 @media (max-width: 760px) { html:not(.desktop-view) .praise-grid { grid-template-columns: 1fr; } }
+
+/* four endorsements: one featured, three below */
+@media (min-width: 900px) { .praise-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
