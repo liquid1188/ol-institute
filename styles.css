@@ -947,3 +947,24 @@ html.desktop-view .page-head.about-head img { transform: scale(1.1); }
 /* partner strip: side by side on phones, LLF kept compact */
 @media (max-width: 600px) {html:not(.desktop-view) .family-row { flex-wrap: nowrap; gap: 20px; align-items: flex-start; }html:not(.desktop-view) .fam { flex: 1 1 0; min-width: 0; }html:not(.desktop-view) .fam-k { font-size: .82rem; text-align: center; }html:not(.desktop-view) .fam > img { height: 40px; }html:not(.desktop-view) .fam-llf { height: 40px; gap: 8px; }html:not(.desktop-view) .fam-llf img { height: 40px; width: 40px; }html:not(.desktop-view) .fam-llf b { font-size: .92rem; max-width: 7.5em; }
 }
+
+/* Oct 22: calendar photos and church labels */
+.cal-card { display: flex; flex-direction: column; }
+.cal-ph { margin: -22px -22px 16px; }
+.cal-ph img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.cal-ph figcaption { font-size: .74rem; line-height: 1.4; color: var(--ink-2); padding: 6px 22px 0; font-style: italic; }
+.cal-ph figcaption a { color: inherit; }
+.cal-who { margin: -4px 0 10px; font-size: .92rem; line-height: 1.45; color: var(--ink-2); }
+.cal-card .cal-date { margin-top: auto; }
+/* Oct 22: parent logo leads, partner logo smaller */
+.fam > img { height: 72px; }
+.fam-llf, .fam-llf img { height: 46px; }
+.fam-llf img { width: 46px; }
+.fam-llf b { font-size: 1.05rem; }
+@media (max-width: 600px) {html:not(.desktop-view) .fam > img { height: 54px; }html:not(.desktop-view) .fam-llf, html:not(.desktop-view) .fam-llf img { height: 32px; }html:not(.desktop-view) .fam-llf img { width: 32px; }html:not(.desktop-view) .fam-llf b { font-size: .82rem; } }
+/* Oct 22: vision on About, planned notes */
+.vis-about { font-family: var(--display); font-size: 1.2rem; line-height: 1.45; color: var(--ink); }
+.vals-about { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 8px; color: var(--ink-2); }
+.vals-about b { color: var(--ink); font-weight: 600; }
+.plan-note { margin: -4px 0 12px; font-size: .92rem; font-style: italic; color: var(--ink-2); }
+.parent p + p { margin-top: 12px; }
