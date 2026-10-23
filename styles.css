@@ -1193,3 +1193,15 @@ html.js .letter-toggle.js-only { display: none; }
 .mlabel:has(.m-ic){display:grid;grid-template-columns:56px minmax(0,1fr);column-gap:18px;align-content:start}
 .mlabel:has(.m-ic)>*{grid-column:2}
 .mlabel .m-ic{grid-column:1;grid-row:1/span 2;margin:4px 0 0}
+
+/* about: audiences + documentary */
+.audiences { margin-top: clamp(40px, 5vw, 60px); padding-top: clamp(28px, 4vw, 40px); border-top: 1px solid var(--rule); }
+.audiences .aud-k { margin: 0; }
+.audiences .photo-strip { margin-top: 16px; }
+.doc-feature { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 48px); align-items: center; margin-top: clamp(44px, 6vw, 72px); }
+.doc-frame { position: relative; aspect-ratio: 16 / 9; background: #000; box-shadow: 0 0 0 1px rgba(216,178,94,.6), 0 0 0 7px var(--paper, #fbf8f2), 0 0 0 8px rgba(216,178,94,.35), 0 24px 50px -24px rgba(15,29,64,.5); }
+.doc-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.doc-txt h3 { font-size: clamp(1.5rem, 2.4vw, 2rem); margin: 0 0 10px; }
+.doc-txt p:last-child { color: var(--ink-2); margin: 0; }
+@media (max-width: 860px) { html:not(.desktop-view) .doc-feature { grid-template-columns: 1fr; } }
+.sign .memoir{display:block;margin-top:6px;font-size:.8rem;color:var(--gold-dark,#8a6d2f);text-decoration:none;border-bottom:1px solid transparent;width:max-content}.sign .memoir:hover{border-bottom-color:currentColor}
