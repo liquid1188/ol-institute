@@ -1063,3 +1063,13 @@ html.desktop-view .page-head.conf-head picture { left: 44%; }
 html.js .letter-toggle.js-only { display: none; }
 @media (max-width: 700px) { html.js:not(.desktop-view) .letter-toggle.js-only { display: inline-flex; } }
 @media (max-width: 700px) { html:not(.desktop-view) .matrix tr.hl { background: #f4ecda; } html:not(.desktop-view) .matrix tr.hl th, html:not(.desktop-view) .matrix tr.hl td { background: none; } }
+
+/* Oct 22: endorsements band */
+.praise-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.praise { margin: 0; background: var(--ivory); border-top: 3px solid var(--leaf); padding: clamp(20px, 2.4vw, 30px); display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+.praise.feat { grid-column: 1 / -1; border-top-color: var(--gold); }
+.praise blockquote { margin: 0; font-family: var(--display); font-size: clamp(1.1rem, 1.5vw, 1.3rem); line-height: 1.5; color: var(--ink); }
+.praise.feat blockquote { font-size: clamp(1.3rem, 2vw, 1.65rem); font-style: italic; }
+.praise figcaption b { display: block; font-weight: 600; color: var(--ink); }
+.praise figcaption span { display: block; font-size: .88rem; color: var(--ink-2); }
+@media (max-width: 760px) { html:not(.desktop-view) .praise-grid { grid-template-columns: 1fr; } }
