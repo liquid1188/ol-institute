@@ -1233,3 +1233,4 @@ html.js .letter-toggle.js-only { display: none; }
 /* display type: a touch more presence */
 h1, h2 { font-weight: 600; letter-spacing: -0.018em; }
 h1 { letter-spacing: -0.022em; }
+.hint:empty{display:none}
