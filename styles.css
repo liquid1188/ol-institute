@@ -1180,3 +1180,6 @@ html.js .letter-toggle.js-only { display: none; }
 .mlabel .m-ic svg{width:44px;height:44px}
 .shelf-panel{border-radius:16px;position:relative;box-shadow:0 18px 40px -18px rgba(15,29,64,.55),inset 0 0 0 1px rgba(216,178,94,.55),inset 0 0 0 7px var(--royal),inset 0 0 0 8px rgba(216,178,94,.3);background:radial-gradient(120% 90% at 50% 0%,rgba(255,255,255,.07),transparent 60%),var(--royal)}
 .shelf-panel .shelf-cap{text-align:center}
+.preface-list li.pref-item{grid-template-columns:72px minmax(0,1fr)}
+.pref-item .mini-spine{justify-self:center;min-width:0;padding-inline:0}
+.pref-item a[href="#patristics"]{width:44px}.pref-item a[href="#theology"]{width:51px}.pref-item a[href="#ecumenism"]{width:39px}.pref-item a[href="#liturgy"]{width:70px}.pref-item a[href="#spirituality"]{width:43px}.pref-item a[href="#history"]{width:27px}
