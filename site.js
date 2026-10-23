@@ -42,7 +42,7 @@ if(lq&&ld){var L=JSON.parse(ld.textContent),zone=d.querySelector('.vol-zone');
 // campaign bar fills when it comes into view
 d.querySelectorAll('.bar-fill').forEach(function(bf){if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){bf.classList.add('in');io.disconnect();}});},{threshold:.4});io.observe(bf);}else bf.classList.add('in');});
 // East and West calendar, live
-var cw=d.getElementById('cal-w');if(cw){
+var cw=d.getElementById('cal-w');if(cw){(function(){
  function W(y){var a=y%19,b=Math.floor(y/100),c=y%100,dd=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-dd-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451);return new Date(y,Math.floor((h+l-7*m+114)/31)-1,((h+l-7*m+114)%31)+1);}
  function E(y){var a=y%4,b=y%7,c=y%19,dd=(19*c+15)%30,e=(2*a+4*b-dd+34)%7;var x=new Date(y,Math.floor((dd+e+114)/31)-1,((dd+e+114)%31)+1);x.setDate(x.getDate()+13);return x;}
  var now=new Date(),t=new Date(now.getFullYear(),now.getMonth(),now.getDate()),Y=t.getFullYear();
@@ -55,7 +55,7 @@ var cw=d.getElementById('cal-w');if(cw){
  d.getElementById('cal-today').innerHTML='Today is <b>'+M[t.getMonth()]+' '+t.getDate()+'</b> on the Gregorian calendar and <b>'+M[j.getMonth()]+' '+j.getDate()+'</b> on the Julian calendar.';
  var tg=d.getElementById('cal-tog');
  if(w.getTime()===e.getTime())tg.innerHTML='This year East and West keep Pascha together, on <b>'+M[w.getMonth()]+' '+w.getDate()+'</b>.';
- else for(var y=Y;y<Y+40;y++){var a=W(y);if(a>t&&a.getTime()===E(y).getTime()){tg.innerHTML='East and West next keep Pascha on the same Sunday in <b>'+y+'</b>, on '+M[a.getMonth()]+' '+a.getDate()+'.';break;}}}
+ else for(var y=Y;y<Y+40;y++){var a=W(y);if(a>t&&a.getTime()===E(y).getTime()){tg.innerHTML='East and West next keep Pascha on the same Sunday in <b>'+y+'</b>, on '+M[a.getMonth()]+' '+a.getDate()+'.';break;}}})();}
 // find-your-path guide
 var gf=d.getElementById('guide-form');if(gf){var G=JSON.parse(d.getElementById('guide-data').textContent),gr=d.getElementById('guide-result');
  function val(n){var x=gf.querySelector('input[name='+n+']:checked');return x?x.value:null;}
