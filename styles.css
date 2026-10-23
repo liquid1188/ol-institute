@@ -1033,3 +1033,10 @@ html.desktop-view .page-head.conf-head picture { left: 44%; }
   .page-head.conf-head::after { background: linear-gradient(90deg, var(--royal) var(--splitc), rgba(27,45,92,.55) calc(var(--splitc) + 6vw), rgba(27,45,92,0) calc(var(--splitc) + 16vw)), linear-gradient(0deg, rgba(10,12,20,.45), transparent 30%); }
   .page-head.conf-head .wrap > * { max-width: calc(var(--splitc) - max(var(--gutter), (100vw - var(--wide)) / 2 + var(--gutter)) - 40px); }
 }
+
+/* Oct 22: founder portraits */
+.founders .f-photo { margin: 0 0 16px; }
+.founders .f-photo img { display: block; width: 100%; max-width: 240px; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 15%; }
+@media (max-width: 760px) { html:not(.desktop-view) .founders li { display: grid; grid-template-columns: 96px 1fr; column-gap: 16px; align-items: start; } html:not(.desktop-view) .founders .f-photo { grid-row: span 2; margin: 0; } html:not(.desktop-view) .founders .f-photo img { max-width: 96px; } }
+/* Oct 22: on phones, hero photo captions sit below the heading, not between photo and title */
+@media (max-width: 760px) { html:not(.desktop-view) .page-head .credit { order: 2; padding: 0 var(--gutter-r) 18px var(--gutter); margin-top: -6px; background: none; } }
