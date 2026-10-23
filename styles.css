@@ -985,3 +985,17 @@ html.desktop-view .page-head.conf-head picture { left: 44%; }
 @media (min-width: 761px) {
   .page-head.conf-head .wrap > * { max-width: calc(44vw - max(var(--gutter), (100vw - var(--wide)) / 2 + var(--gutter)) - 40px); }
 }
+
+/* Oct 22: photo strips in text-heavy sections */
+.photo-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: clamp(28px, 4vw, 44px); }
+.photo-strip figure { margin: 0; }
+.photo-strip img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; cursor: zoom-in; }
+.photo-strip figcaption { margin-top: 8px; font-size: .82rem; line-height: 1.45; font-style: italic; color: var(--ink-2); }
+.on-night .photo-strip figcaption { color: var(--on-night-2); }
+/* Oct 22: About and Media heroes split from tablet width up */
+@media (min-width: 761px) and (max-width: 900px) {
+  .page-head.about-head picture, .page-head.media-head picture, .page-head.kallistos picture { left: 44%; }
+  .page-head.about-head::after, .page-head.media-head::after, .page-head.kallistos::after { background: linear-gradient(90deg, var(--royal) 44%, rgba(27,45,92,0) 44.1%); }
+  .page-head.about-head .wrap > *, .page-head.media-head .wrap > *, .page-head.kallistos .wrap > * { max-width: calc(44vw - var(--gutter) - 32px); }
+  .page-head.about-head img, .page-head.media-head img, .page-head.kallistos img { opacity: 1; }
+}
